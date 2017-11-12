@@ -3,7 +3,7 @@
 $border-color: #ddd;
 $black: #333;
 
-.ngx-table {
+.ngx-lighttable {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -47,14 +47,14 @@ $black: #333;
         }
 
         &:hover {
-          .ngx-table__header-cell--sortable-arrow {
+          .ngx-lighttable__header-cell--sortable-arrow {
             visibility: visible;
           }
         }
       }
 
       &--sorting {
-        .ngx-table__header-cell--sortable-arrow {
+        .ngx-lighttable__header-cell--sortable-arrow {
           visibility: visible;
           border-color: $black;
         }

@@ -1,27 +1,27 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {NgXTableComponent} from './components/ngx-table.component';
-import {NgXTableCellComponent} from './components/ngx-table-cell.component';
+import {NgXLightTableComponent} from './components/ngx-lighttable.component';
+import {NgXLightTableCellComponent} from './components/ngx-lighttable-cell.component';
 
-export * from './components/ngx-table.component';
+export * from './components/ngx-lighttable.component';
 
 @NgModule({
     imports: [
         CommonModule
     ],
     declarations: [
-        NgXTableComponent,
-        NgXTableCellComponent,
+        NgXLightTableComponent,
+        NgXLightTableCellComponent,
     ],
     exports: [
-        NgXTableComponent,
-        NgXTableCellComponent
+        NgXLightTableComponent,
+        NgXLightTableCellComponent
     ]
 })
-export class NgXTableModule {
+export class NgXLightTableModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: NgXTableModule,
+            ngModule: NgXLightTableModule,
             providers: []
         };
     }

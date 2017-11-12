@@ -1,4 +1,4 @@
-export type NgXTableSortEvent = {
+export type NgXLightTableSortEvent = {
     field: string
     direction: string
 };

@@ -1,6 +1,6 @@
-# ngx-table
+# ngx-lighttable
 
-`ngx-table` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).
+`ngx-lighttable` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).
 
 ## Features
 - Handle large data sets (Virtual DOM)
@@ -23,19 +23,19 @@
 All you need to do is to run the following command:
 
 ```bash
-$ npm install @bacanz/ngx-table --save
+$ npm install @bacanz/ngx-lighttable --save
 ```
 
 ## Usage
 
-Import ngx-table directives into your component:
+Import ngx-lighttable directives into your component:
 
 ```typescript
 import {NgModule} from '@angular/core';
 
 ...
 
-import {NgXTable} from '@bacanz/ngx-table';
+import {NgXTable} from '@bacanz/ngx-lighttable';
 ```
 
 Register it by adding to the list of directives of your module:
@@ -55,7 +55,7 @@ export class AppModule {
 Configure the table and add it into the template by registering <i>settings</i> property.
     
 ```typescript
-settings: TableSettings = { // exported type
+settings: NgXLightTableSettings = { // exported type
     headers: 
     [
         {
@@ -116,13 +116,13 @@ settings: TableSettings = { // exported type
 };
 ```
 
-Add ngx-table component inside to the template:
+Add ngx-lighttable component inside to the template:
 
 ```typescript
 // ...
 
 @Component({
-    template: `<ngx-table [settings]="settings"></ngx-table>`
+    template: `<ngx-lighttable [settings]="settings"></ngx-lighttable>`
 })
 // ...
 ```
@@ -205,22 +205,22 @@ Note that some of them are <b>templates</b>. You can have have how many template
 ...
 @Component({
     template: `
-    <ngx-table [settings]="settings" [records]="records">
-        <ngx-table-cell [field]="'tag'"></ngx-table-cell>
-        <ngx-table-cell [field]="'name'"></ngx-table-cell>  
-        <ngx-table-cell [field]="'position'"></ngx-table-cell>        
-        <ngx-table-cell [field]="'since'"></ngx-table-cell>       
-        <ngx-table-cell [field]="'salary'">
+    <ngx-lighttable [settings]="settings" [records]="records">
+        <ngx-lighttable-cell [field]="'tag'"></ngx-lighttable-cell>
+        <ngx-lighttable-cell [field]="'name'"></ngx-lighttable-cell>  
+        <ngx-lighttable-cell [field]="'position'"></ngx-lighttable-cell>        
+        <ngx-lighttable-cell [field]="'since'"></ngx-lighttable-cell>       
+        <ngx-lighttable-cell [field]="'salary'">
             <ng-template let-salary>
                 <strong>{{salary}}</strong>
             </ng-template>
-        </ngx-table-cell>
-        <ngx-table-cell [field]="'actions'">
+        </ngx-lighttable-cell>
+        <ngx-lighttable-cell [field]="'actions'">
             <ng-template let-actions>
                 <button>{{actions}}</button>
             </ng-template>
-        </ngx-table-cell>
-    </ngx-table> 
+        </ngx-lighttable-cell>
+    </ngx-lighttable> 
   `
 })
 ...
@@ -238,14 +238,14 @@ Add them as outputs to listen the events.
 ```typescript
 @Component({
     template: `
-    <ngx-table 
+    <ngx-lighttable 
         [settings]="settings" 
         [records]="records"
         (onSort)="onSortTable($event)"
         (onClickRow)="...($event)"
         (onClickCell)="...($event)">
             ...
-    </ngx-table>
+    </ngx-lighttable>
     `
 })
 ```

@@ -2,10 +2,10 @@ import {Component, Input, ContentChild, TemplateRef, ViewChild} from '@angular/c
 import {NgStyle, NgClass} from '@angular/common';
 
 @Component({
-    selector: 'ngx-table-cell',
-    templateUrl: './ngx-table-cell.component.html'
+    selector: 'ngx-lighttable-cell',
+    templateUrl: './ngx-lighttable-cell.component.html'
 })
-export class NgXTableCellComponent {
+export class NgXLightTableCellComponent {
     /**
      * @description Identifies the property to be displayed on the current cell
      */

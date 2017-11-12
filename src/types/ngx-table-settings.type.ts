@@ -1,7 +1,7 @@
-import {NgXTableHeader} from './ngx-table-settings-header.type';
+import {NgXLightTableHeader} from './ngx-lighttable-settings-header.type';
 
-export type NgXTableSettings = {
-    headers: NgXTableHeader[],
+export type NgXLightTableSettings = {
+    headers: NgXLightTableHeader[],
     messages?: {
         empty?: string
         loading?: string

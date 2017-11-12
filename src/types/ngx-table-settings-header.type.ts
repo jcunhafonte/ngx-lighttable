@@ -1,12 +1,12 @@
 import {NgStyle} from '@angular/common';
-import {NgXTableSortableDirectionEnum} from '../components/ngx-table.component';
+import {NgXLightTableSortableDirectionEnum} from '../components/ngx-lighttable.component';
 
-export type NgXTableHeader = {
+export type NgXLightTableHeader = {
     title: string
     field: string
     sortable: {
         enabled: boolean,
-        direction?: NgXTableSortableDirectionEnum
+        direction?: NgXLightTableSortableDirectionEnum
     },
     width?: number,
     headerClass?: string,

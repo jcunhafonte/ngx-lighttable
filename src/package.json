@@ -1,9 +1,9 @@
 {
-  "name": "@bacanz/ngx-table",
+  "name": "@bacanz/ngx-lighttable",
   "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bacanz/ngx-table.git"
+    "url": "https://github.com/bacanz/ngx-lighttable.git"
   },
   "author": {
     "name": "Bacanz",
@@ -14,17 +14,17 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bacanz/ngx-table.git/issues"
+    "url": "https://github.com/bacanz/ngx-lighttable.git/issues"
   },
-  "module": "ngx-table.js",
-  "typings": "ngx-table.d.ts",
+  "module": "ngx-lighttable.js",
+  "typings": "ngx-lighttable.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
-  "description": "`ngx-table` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).",
-  "homepage": "https://github.com/bacanz/ngx-table#readme",
+  "description": "`ngx-lighttable` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).",
+  "homepage": "https://github.com/bacanz/ngx-lighttable#readme",
   "directories": {
     "doc": "docs"
   }

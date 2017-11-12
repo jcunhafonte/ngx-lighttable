@@ -1,11 +1,11 @@
 {
-  "name": "ngx-table",
+  "name": "ngx-lighttable",
   "version": "0.1.0",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
     "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n ngx-table -d docs --hideGenerator",
+    "docs:build": "compodoc -p tsconfig.json -n ngx-lighttable -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcunhafonte/ngx-table.git"
+    "url": "git+https://github.com/jcunhafonte/ngx-lighttable.git"
   },
   "author": "José Cunha Fonte <jose.fonte@pt.bosch.com>",
   "keywords": [
@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jcunhafonte/ngx-table.git/issues"
+    "url": "https://github.com/jcunhafonte/ngx-lighttable.git/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
@@ -61,8 +61,8 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "description": "`ngx-table` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).",
-  "homepage": "https://github.com/jcunhafonte/ngx-table#readme",
+  "description": "`ngx-lighttable` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).",
+  "homepage": "https://github.com/jcunhafonte/ngx-lighttable#readme",
   "main": "gulpfile.js",
   "directories": {
     "doc": "docs"

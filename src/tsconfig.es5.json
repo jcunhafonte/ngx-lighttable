@@ -21,8 +21,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ngx-table.js",
-    "flatModuleId": "ngx-table"
+    "flatModuleOutFile": "ngx-lighttable.js",
+    "flatModuleId": "ngx-lighttable"
   },
   "files": [
     "./index.ts"

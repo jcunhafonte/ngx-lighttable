@@ -2,12 +2,12 @@ import {
     AfterContentInit, Component, ContentChildren, EventEmitter, Input, Output, QueryList,
     TemplateRef
 } from '@angular/core';
-import {NgXTableSettings} from '../types/ngx-table-settings.type';
-import {NgXTableHeader} from '../types/ngx-table-settings-header.type';
-import {NgXTableCellComponent} from './ngx-table-cell.component';
-import {NgXTableSortEvent} from '../types/ngx-table-sort-event.type';
+import {NgXLightTableSettings} from '../types/ngx-lighttable-settings.type';
+import {NgXLightTableHeader} from '../types/ngx-lighttable-settings-header.type';
+import {NgXLightTableCellComponent} from './ngx-lighttable-cell.component';
+import {NgXLightTableSortEvent} from '../types/ngx-lighttable-sort-event.type';
 
-export const NGX_TABLE_DEFAULT_SETTINGS: NgXTableSettings = {
+export const NGX_TABLE_DEFAULT_SETTINGS: NgXLightTableSettings = {
     headers: [],
     messages: {
         empty: 'No records found',
@@ -18,11 +18,11 @@ export const NGX_TABLE_DEFAULT_SETTINGS: NgXTableSettings = {
 };
 
 @Component({
-    selector: 'ngx-table',
-    templateUrl: './ngx-table.component.html',
-    styleUrls: ['./ngx-table.component.scss']
+    selector: 'ngx-lighttable',
+    templateUrl: './ngx-lighttable.component.html',
+    styleUrls: ['./ngx-lighttable.component.scss']
 })
-export class NgXTableComponent implements AfterContentInit {
+export class NgXLightTableComponent implements AfterContentInit {
     /**
      * @description Property injected with the records to render the table
      */
@@ -31,10 +31,10 @@ export class NgXTableComponent implements AfterContentInit {
     /**
      * @description Sets table settings
      * @param settings
-     * @type {NgXTableSettings}
+     * @type {NgXLightTableSettings}
      */
     @Input()
-    public set settings(settings: NgXTableSettings) {
+    public set settings(settings: NgXLightTableSettings) {
         this._settings = Object.assign({}, NGX_TABLE_DEFAULT_SETTINGS, settings);
     }
 
@@ -45,9 +45,9 @@ export class NgXTableComponent implements AfterContentInit {
 
     /**
      * @description Triggered when a single header is sorted
-     * @type {EventEmitter<NgXTableSortEvent>}
+     * @type {EventEmitter<NgXLightTableSortEvent>}
      */
-    @Output() public onSort: EventEmitter<NgXTableSortEvent> = new EventEmitter<NgXTableSortEvent>();
+    @Output() public onSort: EventEmitter<NgXLightTableSortEvent> = new EventEmitter<NgXLightTableSortEvent>();
 
     /**
      * @description Triggered when a row is clicked
@@ -64,14 +64,14 @@ export class NgXTableComponent implements AfterContentInit {
     /**
      * @description Identify the templates inside the table
      */
-    @ContentChildren(NgXTableCellComponent) public templateCells: QueryList<NgXTableCellComponent>;
+    @ContentChildren(NgXLightTableCellComponent) public templateCells: QueryList<NgXLightTableCellComponent>;
 
     /**
      * @description Shortcut to handle template cells as an array
      */
-    public cells: NgXTableCellComponent[];
+    public cells: NgXLightTableCellComponent[];
 
-    private _settings: NgXTableSettings = NGX_TABLE_DEFAULT_SETTINGS;
+    private _settings: NgXLightTableSettings = NGX_TABLE_DEFAULT_SETTINGS;
 
     ngAfterContentInit() {
         this._setCells();
@@ -84,7 +84,7 @@ export class NgXTableComponent implements AfterContentInit {
      * @param header
      * @returns {boolean}
      */
-    public isSortable(header: NgXTableHeader): boolean {
+    public isSortable(header: NgXLightTableHeader): boolean {
         return header.sortable.enabled;
     }
 
@@ -93,40 +93,40 @@ export class NgXTableComponent implements AfterContentInit {
      * @param header
      * @returns {boolean}
      */
-    public isSorting(header: NgXTableHeader): boolean {
-        return header.sortable.direction !== NgXTableSortableDirectionEnum.neutral;
+    public isSorting(header: NgXLightTableHeader): boolean {
+        return header.sortable.direction !== NgXLightTableSortableDirectionEnum.neutral;
     }
 
     /**
      * @description Retrieve header settings
-     * @returns {NgXTableHeader[]}
+     * @returns {NgXLightTableHeader[]}
      */
-    public getHeaders(): NgXTableHeader[] {
+    public getHeaders(): NgXLightTableHeader[] {
         return this._settings.headers;
     }
 
     /**
      * @description Retrieve css classes for arrow directions
      * @param header
-     * @returns {{ngx-table__header-cell--sortable-arrow: boolean, ngx-table__header-cell--sortable-arrow-down: boolean, ngx-table__header-cell--sortable-arrow-up: boolean}}
+     * @returns {{ngx-lighttable__header-cell--sortable-arrow: boolean, ngx-lighttable__header-cell--sortable-arrow-down: boolean, ngx-lighttable__header-cell--sortable-arrow-up: boolean}}
      */
-    public getArrowSortClasses(header: NgXTableHeader): Object {
+    public getArrowSortClasses(header: NgXLightTableHeader): Object {
         return {
-            'ngx-table__header-cell--sortable-arrow': !this.isSorting(header) || !this._checkSortDirection(header, NgXTableSortableDirectionEnum.neutral),
-            'ngx-table__header-cell--sortable-arrow-down': this._checkSortDirection(header, NgXTableSortableDirectionEnum.desc),
-            'ngx-table__header-cell--sortable-arrow-up': !this.isSorting(header) || this._checkSortDirection(header, NgXTableSortableDirectionEnum.asc)
+            'ngx-lighttable__header-cell--sortable-arrow': !this.isSorting(header) || !this._checkSortDirection(header, NgXLightTableSortableDirectionEnum.neutral),
+            'ngx-lighttable__header-cell--sortable-arrow-down': this._checkSortDirection(header, NgXLightTableSortableDirectionEnum.desc),
+            'ngx-lighttable__header-cell--sortable-arrow-up': !this.isSorting(header) || this._checkSortDirection(header, NgXLightTableSortableDirectionEnum.asc)
         };
     }
 
     /**
      * @description Retrieve css classes for header
      * @param header
-     * @returns {{ngx-table__header-cell--sortable: boolean, ngx-table__header-cell--sorting: boolean}}
+     * @returns {{ngx-lighttable__header-cell--sortable: boolean, ngx-lighttable__header-cell--sorting: boolean}}
      */
-    public getHeaderSortClasses(header: NgXTableHeader): any {
+    public getHeaderSortClasses(header: NgXLightTableHeader): any {
         return {
-            'ngx-table__header-cell--sortable': this.isSortable(header),
-            'ngx-table__header-cell--sorting': this.isSorting(header),
+            'ngx-lighttable__header-cell--sortable': this.isSortable(header),
+            'ngx-lighttable__header-cell--sorting': this.isSorting(header),
             [header.headerClass ? header.headerClass : '']: true
         };
     }
@@ -137,16 +137,16 @@ export class NgXTableComponent implements AfterContentInit {
      * @param event
      * @param header
      */
-    public handleSort(event: Event, header: NgXTableHeader): void {
+    public handleSort(event: Event, header: NgXLightTableHeader): void {
         event.preventDefault();
 
-        this._settings.headers.map((item: NgXTableHeader) => item.field !== header.field
-            ? item.sortable.direction = NgXTableSortableDirectionEnum.neutral
+        this._settings.headers.map((item: NgXLightTableHeader) => item.field !== header.field
+            ? item.sortable.direction = NgXLightTableSortableDirectionEnum.neutral
             : item.sortable.direction = this._getNextSortDirection(item));
 
         this.onSort.emit({
             field: header.field,
-            direction: NgXTableSortableDirectionEnum[header.sortable.direction]
+            direction: NgXLightTableSortableDirectionEnum[header.sortable.direction]
         });
     }
 
@@ -177,7 +177,7 @@ export class NgXTableComponent implements AfterContentInit {
      * @param cell
      * @returns {TemplateRef<any>}
      */
-    public getCellTemplate(cell: NgXTableCellComponent): TemplateRef<any> {
+    public getCellTemplate(cell: NgXLightTableCellComponent): TemplateRef<any> {
         return cell.templateRef || cell.defaultTemplateRef;
     }
 
@@ -220,28 +220,28 @@ export class NgXTableComponent implements AfterContentInit {
      * @param header
      * @returns {string}
      */
-    public getWidth(header: NgXTableHeader): string | null {
+    public getWidth(header: NgXLightTableHeader): string | null {
         return header.width ? `${header.width}%` : null;
     }
 
-    private _checkSortDirection(header: NgXTableHeader, direction: NgXTableSortableDirectionEnum): boolean {
+    private _checkSortDirection(header: NgXLightTableHeader, direction: NgXLightTableSortableDirectionEnum): boolean {
         return header.sortable.direction === direction;
     }
 
-    private _getNextSortDirection(header: NgXTableHeader): NgXTableSortableDirectionEnum {
+    private _getNextSortDirection(header: NgXLightTableHeader): NgXLightTableSortableDirectionEnum {
         switch (header.sortable.direction) {
-            case NgXTableSortableDirectionEnum.asc:
-                return NgXTableSortableDirectionEnum.desc;
-            case NgXTableSortableDirectionEnum.desc:
-                return this._settings.allowNeutralSort ? NgXTableSortableDirectionEnum.neutral : NgXTableSortableDirectionEnum.asc;
-            case NgXTableSortableDirectionEnum.neutral:
-                return NgXTableSortableDirectionEnum.asc;
+            case NgXLightTableSortableDirectionEnum.asc:
+                return NgXLightTableSortableDirectionEnum.desc;
+            case NgXLightTableSortableDirectionEnum.desc:
+                return this._settings.allowNeutralSort ? NgXLightTableSortableDirectionEnum.neutral : NgXLightTableSortableDirectionEnum.asc;
+            case NgXLightTableSortableDirectionEnum.neutral:
+                return NgXLightTableSortableDirectionEnum.asc;
         }
     }
 
     private _checkWidths(): void {
         let widths = 0;
-        this._settings.headers.map((header: NgXTableHeader) => header.width ? widths = widths + header.width : null);
+        this._settings.headers.map((header: NgXLightTableHeader) => header.width ? widths = widths + header.width : null);
         if (widths !== 0 && widths !== 100) {
             console.warn(`Table component: your width percentage is ${widths}% of 100%`);
         }
@@ -254,13 +254,13 @@ export class NgXTableComponent implements AfterContentInit {
     private _sortCells(): void {
         let parseHeader: Object = {};
         let parseCells: any[] = [];
-        this._settings.headers.map((header: NgXTableHeader, key: number) => parseHeader[header.field] = key);
-        this.cells.map((cell: NgXTableCellComponent) => parseCells[parseHeader[cell.field]] = cell);
+        this._settings.headers.map((header: NgXLightTableHeader, key: number) => parseHeader[header.field] = key);
+        this.cells.map((cell: NgXLightTableCellComponent) => parseCells[parseHeader[cell.field]] = cell);
         this.cells = parseCells;
     }
 }
 
-export enum NgXTableSortableDirectionEnum {
+export enum NgXLightTableSortableDirectionEnum {
     asc,
     desc,
     neutral
