@@ -1,5 +1,3 @@
-![bacanz](https://raw.githubusercontent.com/bacanz/ngx-table/master/bacanz.png)
-
 # ngx-table
 
 `ngx-table` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).
