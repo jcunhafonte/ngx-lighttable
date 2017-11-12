@@ -35,7 +35,7 @@ import {NgModule} from '@angular/core';
 
 ...
 
-import {NgXTable} from '@bacanz/ngx-lighttable';
+import {NgXLightTable} from '@bacanz/ngx-lighttable';
 ```
 
 Register it by adding to the list of directives of your module:
@@ -44,7 +44,7 @@ Register it by adding to the list of directives of your module:
 @NgModule({
   imports: [
     ...
-    NgXTable
+    NgXLightTable
   ],
   ...
 })
@@ -63,7 +63,7 @@ settings: NgXLightTableSettings = { // exported type
             field: 'tag',
             sortable: {
                 enabled: false,
-                direction: NgXTableSortableDirectionEnum.neutral
+                direction: NgXLightTableSortableDirectionEnum.neutral
             }
         },
         {
@@ -71,7 +71,7 @@ settings: NgXLightTableSettings = { // exported type
             field: 'name',
             sortable: {
                 enabled: true,
-                direction: NgXTableSortableDirectionEnum.asc
+                direction: NgXLightTableSortableDirectionEnum.asc
             }
         },
         {
@@ -79,7 +79,7 @@ settings: NgXLightTableSettings = { // exported type
             field: 'position',
             sortable: {
                 enabled: true,
-                direction: NgXTableSortableDirectionEnum.neutral
+                direction: NgXLightTableSortableDirectionEnum.neutral
             }
         },
         {
@@ -87,7 +87,7 @@ settings: NgXLightTableSettings = { // exported type
             field: 'since',
             sortable: {
                 enabled: false,
-                direction: NgXTableSortableDirectionEnum.neutral
+                direction: NgXLightTableSortableDirectionEnum.neutral
             }
         },
         {
@@ -95,7 +95,7 @@ settings: NgXLightTableSettings = { // exported type
             field: 'salary',
             sortable: {
                 enabled: false,
-                direction: NgXTableSortableDirectionEnum.neutral
+                direction: NgXLightTableSortableDirectionEnum.neutral
             }
         },
         {
@@ -103,7 +103,7 @@ settings: NgXLightTableSettings = { // exported type
             field: 'actions',
             sortable: {
                 enabled: true,
-                direction: NgXTableSortableDirectionEnum.neutral
+                direction: NgXLightTableSortableDirectionEnum.neutral
             }
         }
     ],
