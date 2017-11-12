@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+$border-color: #ddd;
+$black: #333;
+
+.ngx-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  &__header {
+    &-cell {
+      padding: 12px 8px;
+      vertical-align: middle;
+      border-bottom: 1px solid $border-color;
+
+      &-label {
+        float: left;
+        font-weight: 300;
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+
+      &--sortable {
+        cursor: pointer;
+
+        &-arrow {
+          display: inline-block;
+          padding: 5px;
+          border: solid $border-color;
+          border-width: 0 1px 1px 0;
+          visibility: hidden;
+          transform: rotate(45deg);
+
+          &-down {
+            transform: rotate(45deg);
+          }
+
+          &-up {
+            transform: rotate(-135deg);
+          }
+
+          i {
+            font-size: 12px;
+          }
+        }
+
+        &:hover {
+          .ngx-table__header-cell--sortable-arrow {
+            visibility: visible;
+          }
+        }
+      }
+
+      &--sorting {
+        .ngx-table__header-cell--sortable-arrow {
+          visibility: visible;
+          border-color: $black;
+        }
+      }
+    }
+  }
+
+  &__body {
+    &-row {
+      border-bottom: 1px solid $border-color;
+    }
+
+    &-cell {
+      padding: 12px;
+      color: $black;
+      font-size: 14px;
+      max-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &-no-records {
+      padding: 20px;
+      color: $black;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<table class="ngx-table">
+    <thead class="ngx-table__header">
+        <tr>
+            <th *ngFor="let header of getHeaders()"
+                (click)="isSortable(header) ? handleSort($event, header) : null"
+                [ngClass]="getHeaderSortClasses(header)"
+                [ngStyle]="header.headerStyle"
+                [style.width]="getWidth(header)"
+                [attr.data-automation]="getAttrDataAutomation('header', header.field)"
+                class="ngx-table__header-cell">
+                <span class="ngx-table__header-cell-label">{{header.title}}</span>
+                <i *ngIf="isSortable(header)"
+                   [ngClass]="getArrowSortClasses(header)">
+                </i>
+            </th>
+        </tr>
+    </thead>
+    <tbody class="ngx-table__body">
+        <tr *ngIf="hasRecords()" class="ngx-table__body-no-records">
+            <td [attr.colspan]="getColspan()" class="ngx-table__body-cell">{{getEmptyText()}}</td>
+        </tr>
+        <tr *ngFor="let record of records; let i = index"
+            [attr.data-automation]="getAttrDataAutomation('row', i)"
+            (click)="handleRow($event, record)"
+            class="ngx-table__body-row">
+            <td *ngFor="let cell of cells; let j = index"
+                (click)="handleCell($event, cell.field, i, j)"
+                [attr.data-automation]="getAttrDataAutomation('cell', i + '-' + j)"
+                class="ngx-table__body-cell">
+                <ng-container *ngTemplateOutlet="getCellTemplate(cell); context: {$implicit: record[cell.field]};">
+                </ng-container>
+            </td>
+        </tr>
+    </tbody>
+</table>

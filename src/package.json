@@ -1,0 +1,31 @@
+{
+  "name": "@bacanz/ngx-table",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bacanz/ngx-table.git"
+  },
+  "author": {
+    "name": "Bacanz",
+    "email": "jcunhafonte@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bacanz/ngx-table.git/issues"
+  },
+  "module": "ngx-table.js",
+  "typings": "ngx-table.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "description": "`ngx-table` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).",
+  "homepage": "https://github.com/bacanz/ngx-table#readme",
+  "directories": {
+    "doc": "docs"
+  }
+}
