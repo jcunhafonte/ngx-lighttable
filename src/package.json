@@ -1,12 +1,12 @@
 {
-  "name": "@bacanz/ngx-lighttable",
+  "name": "ngx-lighttable",
   "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bacanz/ngx-lighttable.git"
+    "url": "https://github.com/jcunhafonte/ngx-lighttable.git"
   },
   "author": {
-    "name": "Bacanz",
+    "name": "José Cunha Fonte",
     "email": "jcunhafonte@gmail.com"
   },
   "keywords": [
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bacanz/ngx-lighttable.git/issues"
+    "url": "https://github.com/jcunhafonte/ngx-lighttable.git/issues"
   },
   "module": "ngx-lighttable.js",
   "typings": "ngx-lighttable.d.ts",
@@ -24,7 +24,7 @@
     "zone.js": "^0.8.4"
   },
   "description": "`ngx-lighttable` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).",
-  "homepage": "https://github.com/bacanz/ngx-lighttable#readme",
+  "homepage": "https://github.com/jcunhafonte/ngx-lighttable#readme",
   "directories": {
     "doc": "docs"
   }

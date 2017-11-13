@@ -21,8 +21,7 @@ export * from './components/ngx-lighttable.component';
 export class NgXLightTableModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: NgXLightTableModule,
-            providers: []
+            ngModule: NgXLightTableModule
         };
     }
 }

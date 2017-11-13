@@ -23,7 +23,7 @@
 All you need to do is to run the following command:
 
 ```bash
-$ npm install @bacanz/ngx-lighttable --save
+$ npm install ngx-lighttable --save
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ import {NgModule} from '@angular/core';
 
 ...
 
-import {NgXLightTable} from '@bacanz/ngx-lighttable';
+import {NgXLightTable} from 'ngx-lighttable';
 ```
 
 Register it by adding to the list of directives of your module:
