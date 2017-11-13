@@ -21,70 +21,58 @@
 <polygon fill="#fb8072" stroke="transparent" points="406,-10 406,-30 426,-30 426,-10 406,-10"/>
 <text text-anchor="start" x="429.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
 <g id="clust1" class="cluster">
-<title>cluster_SampleModule</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="51,-70 51,-268 445,-268 445,-70 51,-70"/>
+<title>cluster_NgXLightTableModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="37,-70 37,-268 459,-268 459,-70 37,-70"/>
 </g>
 <g id="clust3" class="cluster">
-<title>cluster_SampleModule_imports</title>
-<polygon fill="none" stroke="#000000" points="164,-78 164,-130 292,-130 292,-78 164,-78"/>
+<title>cluster_NgXLightTableModule_imports</title>
+<polygon fill="none" stroke="#000000" points="190,-78 190,-130 318,-130 318,-78 190,-78"/>
 </g>
 <g id="clust4" class="cluster">
-<title>cluster_SampleModule_exports</title>
-<polygon fill="none" stroke="#000000" points="59,-208 59,-260 437,-260 437,-208 59,-208"/>
+<title>cluster_NgXLightTableModule_exports</title>
+<polygon fill="none" stroke="#000000" points="45,-208 45,-260 451,-260 451,-208 45,-208"/>
 </g>
 <!-- CommonModule -->
 <g id="node1" class="node">
 <title>CommonModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="283.6681,-122 280.6681,-126 259.6681,-126 256.6681,-122 172.3319,-122 172.3319,-86 283.6681,-86 283.6681,-122"/>
-<text text-anchor="middle" x="228" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CommonModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="309.6681,-122 306.6681,-126 285.6681,-126 282.6681,-122 198.3319,-122 198.3319,-86 309.6681,-86 309.6681,-122"/>
+<text text-anchor="middle" x="254" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CommonModule</text>
 </g>
-<!-- SampleModule -->
+<!-- NgXLightTableModule -->
 <g id="node2" class="node">
-<title>SampleModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="278.5438,-187 275.5438,-191 254.5438,-191 251.5438,-187 177.4562,-187 177.4562,-151 278.5438,-151 278.5438,-187"/>
-<text text-anchor="middle" x="228" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">SampleModule</text>
+<title>NgXLightTableModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="328.4692,-187 325.4692,-191 304.4692,-191 301.4692,-187 179.5308,-187 179.5308,-151 328.4692,-151 328.4692,-187"/>
+<text text-anchor="middle" x="254" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">NgXLightTableModule</text>
 </g>
-<!-- CommonModule&#45;&gt;SampleModule -->
+<!-- CommonModule&#45;&gt;NgXLightTableModule -->
 <g id="edge1" class="edge">
-<title>CommonModule&#45;&gt;SampleModule</title>
-<path fill="none" stroke="#000000" d="M228,-122.1061C228,-122.1061 228,-140.991 228,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="224.5001,-140.9909 228,-150.991 231.5001,-140.991 224.5001,-140.9909"/>
+<title>CommonModule&#45;&gt;NgXLightTableModule</title>
+<path fill="none" stroke="#000000" d="M254,-122.1061C254,-122.1061 254,-140.991 254,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="250.5001,-140.9909 254,-150.991 257.5001,-140.991 250.5001,-140.9909"/>
 </g>
-<!-- SampleComponent  -->
+<!-- NgXLightTableComponent  -->
 <g id="node3" class="node">
-<title>SampleComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="429.3255,-252 302.6745,-252 302.6745,-216 429.3255,-216 429.3255,-252"/>
-<text text-anchor="middle" x="366" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">SampleComponent </text>
+<title>NgXLightTableComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="443.252,-252 268.748,-252 268.748,-216 443.252,-216 443.252,-252"/>
+<text text-anchor="middle" x="356" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">NgXLightTableComponent </text>
 </g>
-<!-- SampleModule&#45;&gt;SampleComponent  -->
+<!-- NgXLightTableModule&#45;&gt;NgXLightTableComponent  -->
 <g id="edge2" class="edge">
-<title>SampleModule&#45;&gt;SampleComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M278.6025,-169C317.9876,-169 366,-169 366,-169 366,-169 366,-205.8939 366,-205.8939"/>
-<polygon fill="#000000" stroke="#000000" points="362.5001,-205.8938 366,-215.8939 369.5001,-205.8939 362.5001,-205.8938"/>
+<title>NgXLightTableModule&#45;&gt;NgXLightTableComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M298.6794,-187.1061C298.6794,-187.1061 298.6794,-205.991 298.6794,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="295.1794,-205.9909 298.6794,-215.991 302.1794,-205.991 295.1794,-205.9909"/>
 </g>
-<!-- SampleDirective  -->
+<!-- NgXLightTableCellComponent  -->
 <g id="node4" class="node">
-<title>SampleDirective </title>
-<polygon fill="#fb8072" stroke="#000000" points="284.5766,-252 171.4234,-252 171.4234,-216 284.5766,-216 284.5766,-252"/>
-<text text-anchor="middle" x="228" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">SampleDirective </text>
+<title>NgXLightTableCellComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="250.5846,-252 53.4154,-252 53.4154,-216 250.5846,-216 250.5846,-252"/>
+<text text-anchor="middle" x="152" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">NgXLightTableCellComponent </text>
 </g>
-<!-- SampleModule&#45;&gt;SampleDirective  -->
+<!-- NgXLightTableModule&#45;&gt;NgXLightTableCellComponent  -->
 <g id="edge3" class="edge">
-<title>SampleModule&#45;&gt;SampleDirective </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M228,-187.1061C228,-187.1061 228,-205.991 228,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="224.5001,-205.9909 228,-215.991 231.5001,-205.991 224.5001,-205.9909"/>
-</g>
-<!-- SamplePipe  -->
-<g id="node5" class="node">
-<title>SamplePipe </title>
-<polygon fill="#fb8072" stroke="#000000" points="153.3816,-252 66.6184,-252 66.6184,-216 153.3816,-216 153.3816,-252"/>
-<text text-anchor="middle" x="110" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">SamplePipe </text>
-</g>
-<!-- SampleModule&#45;&gt;SamplePipe  -->
-<g id="edge4" class="edge">
-<title>SampleModule&#45;&gt;SamplePipe </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M177.2726,-169C145.2905,-169 110,-169 110,-169 110,-169 110,-205.8939 110,-205.8939"/>
-<polygon fill="#000000" stroke="#000000" points="106.5001,-205.8938 110,-215.8939 113.5001,-205.8939 106.5001,-205.8938"/>
+<title>NgXLightTableModule&#45;&gt;NgXLightTableCellComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M215.1538,-187.1061C215.1538,-187.1061 215.1538,-205.991 215.1538,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="211.6538,-205.9909 215.1538,-215.991 218.6538,-205.991 211.6538,-205.9909"/>
 </g>
 </g>
 </svg>

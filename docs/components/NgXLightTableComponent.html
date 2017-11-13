@@ -1,0 +1,1779 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ngx-lighttable</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ngx-lighttable</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">ngx-lighttable</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/NgXLightTableModule.html" >NgXLightTableModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/NgXLightTableCellComponent.html" >NgXLightTableCellComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/NgXLightTableComponent.html"  data-type="entity-link" class="active" >NgXLightTableComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">ngx-lighttable</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/NgXLightTableModule.html" >NgXLightTableModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/NgXLightTableCellComponent.html" >NgXLightTableCellComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/NgXLightTableComponent.html"  data-type="entity-link" class="active" >NgXLightTableComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>NgXLightTableComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/components/ngx-lighttable.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/AfterContentInit-interface.html" target="_blank" >AfterContentInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>ngx-lighttable</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>ngx-lighttable.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ngx-lighttable.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="inputs">Inputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>isLoading</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code>boolean</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/components/ngx-lighttable.component.ts:44</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>records</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code>Object[]</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/components/ngx-lighttable.component.ts:29</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>settings</code>
+                        </td>
+                        <td class="col-md-10">
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/components/ngx-lighttable.component.ts:37</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="outputs">Outputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>onClickCell</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;Object&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/components/ngx-lighttable.component.ts:62</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>onClickRow</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;Object&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/components/ngx-lighttable.component.ts:56</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>onSort</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;NgXLightTableSortEvent&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/components/ngx-lighttable.component.ts:50</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> ngAfterContentInit</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngAfterContentInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/components/ngx-lighttable.component.ts:76</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> isSortable</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>isSortable(header: NgXLightTableHeader)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/components/ngx-lighttable.component.ts:87</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>header</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>boolean</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> isSorting</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>isSorting(header: NgXLightTableHeader)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/components/ngx-lighttable.component.ts:96</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>header</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>boolean</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getHeaders</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getHeaders()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">src/components/ngx-lighttable.component.ts:104</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>NgXLightTableHeader[]</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getArrowSortClasses</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getArrowSortClasses(header: NgXLightTableHeader)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/components/ngx-lighttable.component.ts:113</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>header</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>Object</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        <p>ngx-lighttable<strong>header-cell--sortable-arrow: boolean, ngx-lighttable</strong>header-cell--sortable-arrow-down: boolean, ngx-lighttable__header-cell--sortable-arrow-up: boolean}}</p>
+    
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getHeaderSortClasses</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getHeaderSortClasses(header: NgXLightTableHeader)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/components/ngx-lighttable.component.ts:126</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>header</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>any</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        <p>ngx-lighttable<strong>header-cell--sortable: boolean, ngx-lighttable</strong>header-cell--sorting: boolean}}</p>
+    
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> handleSort</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>handleSort(event: <a href="https://angular.io/docs/ts/latest/api/router/index/Event-type-alias.html" target="_blank">Event</a>, header: NgXLightTableHeader)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/components/ngx-lighttable.component.ts:140</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>event</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>header</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> handleRow</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>handleRow(event: <a href="https://angular.io/docs/ts/latest/api/router/index/Event-type-alias.html" target="_blank">Event</a>, row: Object)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/components/ngx-lighttable.component.ts:158</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>event</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>row</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> handleCell</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>handleCell(event: <a href="https://angular.io/docs/ts/latest/api/router/index/Event-type-alias.html" target="_blank">Event</a>, field: string, row: number, cell: number)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/components/ngx-lighttable.component.ts:170</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>event</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>field</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>row</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>cell</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getCellTemplate</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getCellTemplate(cell: <a href="../components/NgXLightTableCellComponent.html">NgXLightTableCellComponent</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="180" class="link-to-prism">src/components/ngx-lighttable.component.ts:180</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>cell</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>TemplateRef&lt;any&gt;</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getAttrDataAutomation</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getAttrDataAutomation(area: string, value: string)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="190" class="link-to-prism">src/components/ngx-lighttable.component.ts:190</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>area</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>value</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>string</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getEmptyText</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getEmptyText()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/components/ngx-lighttable.component.ts:198</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>string</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getColspan</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getColspan()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="206" class="link-to-prism">src/components/ngx-lighttable.component.ts:206</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>number</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> hasRecords</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>hasRecords()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="214" class="link-to-prism">src/components/ngx-lighttable.component.ts:214</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>boolean</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> getWidth</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>getWidth(header: NgXLightTableHeader)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="223" class="link-to-prism">src/components/ngx-lighttable.component.ts:223</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>header</b>
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>string</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> _checkSortDirection</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play lock">
+                                    <span class="fa fa-lock"></span>
+                                </span>
+                            <code>_checkSortDirection(header: NgXLightTableHeader, direction: NgXLightTableSortableDirectionEnum)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="227" class="link-to-prism">src/components/ngx-lighttable.component.ts:227</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>boolean</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> _getNextSortDirection</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play lock">
+                                    <span class="fa fa-lock"></span>
+                                </span>
+                            <code>_getNextSortDirection(header: NgXLightTableHeader)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/components/ngx-lighttable.component.ts:231</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>NgXLightTableSortableDirectionEnum</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> _checkWidths</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play lock">
+                                    <span class="fa fa-lock"></span>
+                                </span>
+                            <code>_checkWidths()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="242" class="link-to-prism">src/components/ngx-lighttable.component.ts:242</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> _setCells</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play lock">
+                                    <span class="fa fa-lock"></span>
+                                </span>
+                            <code>_setCells()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="250" class="link-to-prism">src/components/ngx-lighttable.component.ts:250</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>any</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> _sortCells</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play lock">
+                                    <span class="fa fa-lock"></span>
+                                </span>
+                            <code>_sortCells()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="254" class="link-to-prism">src/components/ngx-lighttable.component.ts:254</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="inputs">
+                Properties
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> _settings</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_settings:     <code>NgXLightTableSettings</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>NGX_TABLE_DEFAULT_SETTINGS</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/components/ngx-lighttable.component.ts:74</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> cells</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-export"></span><code>cells:     <code><a href="../components/NgXLightTableCellComponent.html" target="_self" >NgXLightTableCellComponent[]</a></code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/components/ngx-lighttable.component.ts:72</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> templateCells</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-export"></span><code>templateCells:     <code><a href="../components/NgXLightTableCellComponent.html" target="_self" >QueryList&lt;NgXLightTableCellComponent&gt;</a></code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ContentChildren</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/components/ngx-lighttable.component.ts:67</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+    </section>
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import {
+    AfterContentInit, Component, ContentChildren, EventEmitter, Input, Output, QueryList,
+    TemplateRef
+} from &#x27;@angular/core&#x27;;
+import {NgXLightTableSettings} from &#x27;../types/ngx-lighttable-settings.type&#x27;;
+import {NgXLightTableHeader} from &#x27;../types/ngx-lighttable-settings-header.type&#x27;;
+import {NgXLightTableCellComponent} from &#x27;./ngx-lighttable-cell.component&#x27;;
+import {NgXLightTableSortEvent} from &#x27;../types/ngx-lighttable-sort-event.type&#x27;;
+
+export const NGX_TABLE_DEFAULT_SETTINGS: NgXLightTableSettings &#x3D; {
+    headers: [],
+    messages: {
+        empty: &#x27;No records found&#x27;,
+        loading: &#x27;Loading records&#x27;
+    },
+    allowMultipleSort: true,
+    allowNeutralSort: true
+};
+
+@Component({
+    selector: &#x27;ngx-lighttable&#x27;,
+    templateUrl: &#x27;./ngx-lighttable.component.html&#x27;,
+    styleUrls: [&#x27;./ngx-lighttable.component.scss&#x27;]
+})
+export class NgXLightTableComponent implements AfterContentInit {
+    /**
+     * @description Property injected with the records to render the table
+     */
+    @Input() public records: Object[] &#x3D; [];
+
+    /**
+     * @description Sets table settings
+     * @param settings
+     * @type {NgXLightTableSettings}
+     */
+    @Input()
+    public set settings(settings: NgXLightTableSettings) {
+        this._settings &#x3D; Object.assign({}, NGX_TABLE_DEFAULT_SETTINGS, settings);
+    }
+
+    /**
+     * @description Property injected to define if table is being loaded e.g. async data
+     */
+    @Input() public isLoading: boolean;
+
+    /**
+     * @description Triggered when a single header is sorted
+     * @type {EventEmitter&lt;NgXLightTableSortEvent&gt;}
+     */
+    @Output() public onSort: EventEmitter&lt;NgXLightTableSortEvent&gt; &#x3D; new EventEmitter&lt;NgXLightTableSortEvent&gt;();
+
+    /**
+     * @description Triggered when a row is clicked
+     * @type {EventEmitter&lt;Object&gt;}
+     */
+    @Output() public onClickRow: EventEmitter&lt;Object&gt; &#x3D; new EventEmitter&lt;Object&gt;();
+
+    /**
+     * @description Triggered when a single cell is clicked
+     * @type {EventEmitter&lt;Object&gt;}
+     */
+    @Output() public onClickCell: EventEmitter&lt;Object&gt; &#x3D; new EventEmitter&lt;Object&gt;();
+
+    /**
+     * @description Identify the templates inside the table
+     */
+    @ContentChildren(NgXLightTableCellComponent) public templateCells: QueryList&lt;NgXLightTableCellComponent&gt;;
+
+    /**
+     * @description Shortcut to handle template cells as an array
+     */
+    public cells: NgXLightTableCellComponent[];
+
+    private _settings: NgXLightTableSettings &#x3D; NGX_TABLE_DEFAULT_SETTINGS;
+
+    ngAfterContentInit() {
+        this._setCells();
+        this._sortCells();
+        this._checkWidths();
+    }
+
+    /**
+     * @description Check if a single header as the sortable option enabled
+     * @param header
+     * @returns {boolean}
+     */
+    public isSortable(header: NgXLightTableHeader): boolean {
+        return header.sortable.enabled;
+    }
+
+    /**
+     * @description Check if a single header is being sorted
+     * @param header
+     * @returns {boolean}
+     */
+    public isSorting(header: NgXLightTableHeader): boolean {
+        return header.sortable.direction !&#x3D;&#x3D; NgXLightTableSortableDirectionEnum.neutral;
+    }
+
+    /**
+     * @description Retrieve header settings
+     * @returns {NgXLightTableHeader[]}
+     */
+    public getHeaders(): NgXLightTableHeader[] {
+        return this._settings.headers;
+    }
+
+    /**
+     * @description Retrieve css classes for arrow directions
+     * @param header
+     * @returns {{ngx-lighttable__header-cell--sortable-arrow: boolean, ngx-lighttable__header-cell--sortable-arrow-down: boolean, ngx-lighttable__header-cell--sortable-arrow-up: boolean}}
+     */
+    public getArrowSortClasses(header: NgXLightTableHeader): Object {
+        return {
+            &#x27;ngx-lighttable__header-cell--sortable-arrow&#x27;: !this.isSorting(header) || !this._checkSortDirection(header, NgXLightTableSortableDirectionEnum.neutral),
+            &#x27;ngx-lighttable__header-cell--sortable-arrow-down&#x27;: this._checkSortDirection(header, NgXLightTableSortableDirectionEnum.desc),
+            &#x27;ngx-lighttable__header-cell--sortable-arrow-up&#x27;: !this.isSorting(header) || this._checkSortDirection(header, NgXLightTableSortableDirectionEnum.asc)
+        };
+    }
+
+    /**
+     * @description Retrieve css classes for header
+     * @param header
+     * @returns {{ngx-lighttable__header-cell--sortable: boolean, ngx-lighttable__header-cell--sorting: boolean}}
+     */
+    public getHeaderSortClasses(header: NgXLightTableHeader): any {
+        return {
+            &#x27;ngx-lighttable__header-cell--sortable&#x27;: this.isSortable(header),
+            &#x27;ngx-lighttable__header-cell--sorting&#x27;: this.isSorting(header),
+            [header.headerClass ? header.headerClass : &#x27;&#x27;]: true
+        };
+    }
+
+    /**
+     * @description Triggered when single table header is clicked
+     * @description Set all the different header to false and check the right order to table header
+     * @param event
+     * @param header
+     */
+    public handleSort(event: Event, header: NgXLightTableHeader): void {
+        event.preventDefault();
+
+        this._settings.headers.map((item: NgXLightTableHeader) &#x3D;&gt; item.field !&#x3D;&#x3D; header.field
+            ? item.sortable.direction &#x3D; NgXLightTableSortableDirectionEnum.neutral
+            : item.sortable.direction &#x3D; this._getNextSortDirection(item));
+
+        this.onSort.emit({
+            field: header.field,
+            direction: NgXLightTableSortableDirectionEnum[header.sortable.direction]
+        });
+    }
+
+    /**
+     * @description Triggered when table row is clicked
+     * @param event
+     * @param row
+     */
+    public handleRow(event: Event, row: Object): void {
+        event.preventDefault();
+        this.onClickRow.emit(row);
+    }
+
+    /**
+     * @description Triggered when single table cell is clicked
+     * @param event
+     * @param field
+     * @param row
+     * @param cell
+     */
+    public handleCell(event: Event, field: string, row: number, cell: number): void {
+        event.preventDefault();
+        this.onClickCell.emit({value: this.records[row][field], field, row, cell});
+    }
+
+    /**
+     * @description Returns the TemplateRef for the table cell or the default TemplateRef if none is passed
+     * @param cell
+     * @returns {TemplateRef&lt;any&gt;}
+     */
+    public getCellTemplate(cell: NgXLightTableCellComponent): TemplateRef&lt;any&gt; {
+        return cell.templateRef || cell.defaultTemplateRef;
+    }
+
+    /**
+     * @description Returns data-automation attribute by params received
+     * @param area
+     * @param value
+     * @returns {string}
+     */
+    public getAttrDataAutomation(area: string, value: string): string {
+        return &#x60;table-${area}-${value}&#x60;;
+    }
+
+    /**
+     * @description Get empty text for no records
+     * @returns {string}
+     */
+    public getEmptyText(): string {
+        return this.isLoading ? this._settings.messages.loading : this._settings.messages.empty;
+    }
+
+    /**
+     * @description Get colspan length to style no records row
+     * @returns {number}
+     */
+    public getColspan(): number {
+        return this._settings.headers.length;
+    }
+
+    /**
+     * @description Return if table has records
+     * @returns {boolean}
+     */
+    public hasRecords(): boolean {
+        return this.records.length &#x3D;&#x3D;&#x3D; 0;
+    }
+
+    /**
+     * @description Check if a single header has an width option and if so get it
+     * @param header
+     * @returns {string}
+     */
+    public getWidth(header: NgXLightTableHeader): string | null {
+        return header.width ? &#x60;${header.width}%&#x60; : null;
+    }
+
+    private _checkSortDirection(header: NgXLightTableHeader, direction: NgXLightTableSortableDirectionEnum): boolean {
+        return header.sortable.direction &#x3D;&#x3D;&#x3D; direction;
+    }
+
+    private _getNextSortDirection(header: NgXLightTableHeader): NgXLightTableSortableDirectionEnum {
+        switch (header.sortable.direction) {
+            case NgXLightTableSortableDirectionEnum.asc:
+                return NgXLightTableSortableDirectionEnum.desc;
+            case NgXLightTableSortableDirectionEnum.desc:
+                return this._settings.allowNeutralSort ? NgXLightTableSortableDirectionEnum.neutral : NgXLightTableSortableDirectionEnum.asc;
+            case NgXLightTableSortableDirectionEnum.neutral:
+                return NgXLightTableSortableDirectionEnum.asc;
+        }
+    }
+
+    private _checkWidths(): void {
+        let widths &#x3D; 0;
+        this._settings.headers.map((header: NgXLightTableHeader) &#x3D;&gt; header.width ? widths &#x3D; widths + header.width : null);
+        if (widths !&#x3D;&#x3D; 0 &amp;&amp; widths !&#x3D;&#x3D; 100) {
+            console.warn(&#x60;Table component: your width percentage is ${widths}% of 100%&#x60;);
+        }
+    }
+
+    private _setCells(): any {
+        this.cells &#x3D; this.templateCells.toArray();
+    }
+
+    private _sortCells(): void {
+        let parseHeader: Object &#x3D; {};
+        let parseCells: any[] &#x3D; [];
+        this._settings.headers.map((header: NgXLightTableHeader, key: number) &#x3D;&gt; parseHeader[header.field] &#x3D; key);
+        this.cells.map((cell: NgXLightTableCellComponent) &#x3D;&gt; parseCells[parseHeader[cell.field]] &#x3D; cell);
+        this.cells &#x3D; parseCells;
+    }
+}
+
+export enum NgXLightTableSortableDirectionEnum {
+    asc,
+    desc,
+    neutral
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;table class&#x3D;&quot;ngx-lighttable&quot;&gt;
+    &lt;thead class&#x3D;&quot;ngx-lighttable__header&quot;&gt;
+        &lt;tr&gt;
+            &lt;th *ngFor&#x3D;&quot;let header of getHeaders()&quot;
+                (click)&#x3D;&quot;isSortable(header) ? handleSort($event, header) : null&quot;
+                [ngClass]&#x3D;&quot;getHeaderSortClasses(header)&quot;
+                [ngStyle]&#x3D;&quot;header.headerStyle&quot;
+                [style.width]&#x3D;&quot;getWidth(header)&quot;
+                [attr.data-automation]&#x3D;&quot;getAttrDataAutomation(&#x27;header&#x27;, header.field)&quot;
+                class&#x3D;&quot;ngx-lighttable__header-cell&quot;&gt;
+                &lt;span class&#x3D;&quot;ngx-lighttable__header-cell-label&quot;&gt;{{header.title}}&lt;/span&gt;
+                &lt;i *ngIf&#x3D;&quot;isSortable(header)&quot;
+                   [ngClass]&#x3D;&quot;getArrowSortClasses(header)&quot;&gt;
+                &lt;/i&gt;
+            &lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody class&#x3D;&quot;ngx-lighttable__body&quot;&gt;
+        &lt;tr *ngIf&#x3D;&quot;hasRecords()&quot; class&#x3D;&quot;ngx-lighttable__body-no-records&quot;&gt;
+            &lt;td [attr.colspan]&#x3D;&quot;getColspan()&quot; class&#x3D;&quot;ngx-lighttable__body-cell&quot;&gt;{{getEmptyText()}}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr *ngFor&#x3D;&quot;let record of records; let i &#x3D; index&quot;
+            [attr.data-automation]&#x3D;&quot;getAttrDataAutomation(&#x27;row&#x27;, i)&quot;
+            (click)&#x3D;&quot;handleRow($event, record)&quot;
+            class&#x3D;&quot;ngx-lighttable__body-row&quot;&gt;
+            &lt;td *ngFor&#x3D;&quot;let cell of cells; let j &#x3D; index&quot;
+                (click)&#x3D;&quot;handleCell($event, cell.field, i, j)&quot;
+                [attr.data-automation]&#x3D;&quot;getAttrDataAutomation(&#x27;cell&#x27;, i + &#x27;-&#x27; + j)&quot;
+                class&#x3D;&quot;ngx-lighttable__body-cell&quot;&gt;
+                &lt;ng-container *ngTemplateOutlet&#x3D;&quot;getCellTemplate(cell); context: {$implicit: record[cell.field]};&quot;&gt;
+                &lt;/ng-container&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><table class="ngx-lighttable">    <thead class="ngx-lighttable__header">        <tr>            <th *ngFor="let header of getHeaders()"                (click)="isSortable(header) ? handleSort($event, header) : null"                [ngClass]="getHeaderSortClasses(header)"                [ngStyle]="header.headerStyle"                [style.width]="getWidth(header)"                [attr.data-automation]="getAttrDataAutomation(\'header\', header.field)"                class="ngx-lighttable__header-cell">                <span class="ngx-lighttable__header-cell-label">{{header.title}}</span>                <i *ngIf="isSortable(header)"                   [ngClass]="getArrowSortClasses(header)">                </i>            </th>        </tr>    </thead>    <tbody class="ngx-lighttable__body">        <tr *ngIf="hasRecords()" class="ngx-lighttable__body-no-records">            <td [attr.colspan]="getColspan()" class="ngx-lighttable__body-cell">{{getEmptyText()}}</td>        </tr>        <tr *ngFor="let record of records; let i = index"            [attr.data-automation]="getAttrDataAutomation(\'row\', i)"            (click)="handleRow($event, record)"            class="ngx-lighttable__body-row">            <td *ngFor="let cell of cells; let j = index"                (click)="handleCell($event, cell.field, i, j)"                [attr.data-automation]="getAttrDataAutomation(\'cell\', i + \'-\' + j)"                class="ngx-lighttable__body-cell">                <ng-container *ngTemplateOutlet="getCellTemplate(cell); context: {$implicit: record[cell.field]};">                </ng-container>            </td>        </tr>    </tbody></table></div>'
+    var COMPONENTS = [{'name': 'NgXLightTableCellComponent', 'selector': 'ngx-lighttable-cell'},{'name': 'NgXLightTableComponent', 'selector': 'ngx-lighttable'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'NgXLightTableComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

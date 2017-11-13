@@ -63,7 +63,7 @@
                                 id="xs-modules-links"
                             >
                                 <li class="link">
-                                    <a href="./modules/SampleModule.html" >SampleModule</a>
+                                    <a href="./modules/NgXLightTableModule.html" >NgXLightTableModule</a>
                                 </li>
                         </ul>
                     </li>
@@ -80,55 +80,23 @@
                                 id="xs-components-links"
                             >
                                 <li class="link">
-                                    <a href="./components/SampleComponent.html" >SampleComponent</a>
+                                    <a href="./components/NgXLightTableCellComponent.html" >NgXLightTableCellComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/NgXLightTableComponent.html" >NgXLightTableComponent</a>
                                 </li>
                         </ul>
                     </li>
             
-                    <li class="chapter">
-                        <div class="simple">
-                            <span class="fa fa-code"></span>
-                            <span>Directives</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-directives-links"
-                                ></span>
-                        </div>
-                        <ul class="links collapse in"
-                                id="xs-directives-links"
-                            >
-                                <li class="link">
-                                    <a href="./directives/SampleDirective.html" >SampleDirective</a>
-                                </li>
-                        </ul>
-                    </li>
+            
+            
+            
+            
             
             
                     <li class="chapter">
-                        <div class="simple">
-                            <span class="fa fa-long-arrow-down"></span>
-                            <span>Injectables</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-injectables-links"
-                                ></span>
-                        </div>
-                        <ul class="links collapse in"
-                                id="xs-injectables-links"
-                            >
-                                <li class="link">
-                                    <a href="./injectables/SamplePipe.html" >SamplePipe</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./injectables/SamplePipe.html" >SamplePipe</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./injectables/SampleService.html" >SampleService</a>
-                                </li>
-                        </ul>
+                        <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
                     </li>
-            
-            
-            
-            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -188,7 +156,7 @@
                                        id="modules-links"
                    >
                                        <li class="link">
-                                           <a href="./modules/SampleModule.html" >SampleModule</a>
+                                           <a href="./modules/NgXLightTableModule.html" >NgXLightTableModule</a>
                                        </li>
                                </ul>
                            </li>
@@ -205,55 +173,23 @@
                                        id="components-links"
                    >
                                        <li class="link">
-                                           <a href="./components/SampleComponent.html" >SampleComponent</a>
+                                           <a href="./components/NgXLightTableCellComponent.html" >NgXLightTableCellComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/NgXLightTableComponent.html" >NgXLightTableComponent</a>
                                        </li>
                                </ul>
                            </li>
                    
-                           <li class="chapter">
-                               <div class="simple">
-                                   <span class="fa fa-code"></span>
-                                   <span>Directives</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#directives-links"
-                   ></span>
-                               </div>
-                               <ul class="links collapse in"
-                                       id="directives-links"
-                   >
-                                       <li class="link">
-                                           <a href="./directives/SampleDirective.html" >SampleDirective</a>
-                                       </li>
-                               </ul>
-                           </li>
+                   
+                   
+                   
+                   
                    
                    
                            <li class="chapter">
-                               <div class="simple">
-                                   <span class="fa fa-long-arrow-down"></span>
-                                   <span>Injectables</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#injectables-links"
-                   ></span>
-                               </div>
-                               <ul class="links collapse in"
-                                       id="injectables-links"
-                   >
-                                       <li class="link">
-                                           <a href="./injectables/SamplePipe.html" >SamplePipe</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./injectables/SamplePipe.html" >SamplePipe</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./injectables/SampleService.html" >SampleService</a>
-                                       </li>
-                               </ul>
+                               <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
                            </li>
-                   
-                   
-                   
-                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -267,42 +203,219 @@
                <div class="content readme">
                    <div class="content-data">
 <h1 id="ngx-lighttable">ngx-lighttable</h1>
+<p><code>ngx-lighttable</code> is an Angular component built with <em>TypeScript</em>, <em>CSS3</em>, <em>HTML5</em> and <em>Angular &gt;= 4</em>. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn&#39;t make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Handle large data sets (Virtual DOM)</li>
+<li>Expressive header with sorting</li>
+<li>Unordered cells</li>
+<li>Easy configuration and manipulation</li>
+<li>HTML templating for cells</li>
+<li>Light codebase / No external dependencies</li>
+<li>Easy selectors for testing purposes</li>
+<li>AoT compilation support</li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>Responsive support<ul>
+<li>Showing/hiding unecessary content</li>
+</ul>
+</li>
+<li>Sorting multiple columns</li>
+<li>Single events for cell</li>
+</ul>
 <h2 id="installation">Installation</h2>
-<p>To install this library, run:</p>
-<pre class="line-numbers"><code class="language-bash">$ npm install ngx-lighttable --save</code></pre><h2 id="consuming-your-library">Consuming your library</h2>
-<p>Once you have published your library to npm, you can import your library in any Angular application by running:</p>
-<pre class="line-numbers"><code class="language-bash">$ npm install ngx-lighttable</code></pre><p>and then from your Angular <code>AppModule</code>:</p>
-<pre class="line-numbers"><code class="language-typescript">import { BrowserModule } from &#39;&#40;angular/platform-browser&#39;;
-import { NgModule } from &#39;&#40;angular/core&#39;;
+<p>All you need to do is to run the following command:</p>
+<pre class="line-numbers"><code class="language-bash">$ npm install ngx-lighttable --save</code></pre><h2 id="usage">Usage</h2>
+<p>Import ngx-lighttable directives into your component:</p>
+<pre class="line-numbers"><code class="language-typescript">import {NgModule} from &#39;&#40;angular/core&#39;;
 
-import { AppComponent } from &#39;./app.component&#39;;
+...
 
-// Import your library
-import { SampleModule } from &#39;ngx-lighttable&#39;;
-
-&#40;NgModule({
-  declarations: [
-    AppComponent
-  ],
+import {NgXLightTable} from &#39;ngx-lighttable&#39;;</code></pre><p>Register it by adding to the list of directives of your module:</p>
+<pre class="line-numbers"><code class="language-typescript">&#40;NgModule({
   imports: [
-    BrowserModule,
-
-    // Specify your library as an import
-    LibraryModule
+    ...
+    NgXLightTable
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  ...
 })
-export class AppModule { }</code></pre><p>Once your library is imported, you can use its components, directives and pipes in your Angular application:</p>
-<pre class="line-numbers"><code class="language-xml">&lt;!-- You can now use your library component in app.component.html --&gt;
-&lt;h1&gt;
-  {{title}}
-&lt;/h1&gt;
-&lt;sampleComponent&gt;&lt;/sampleComponent&gt;</code></pre><h2 id="development">Development</h2>
-<p>To generate all <code>*.js</code>, <code>*.d.ts</code> and <code>*.metadata.json</code> files:</p>
-<pre class="line-numbers"><code class="language-bash">$ npm run build</code></pre><p>To lint all <code>*.ts</code> files:</p>
-<pre class="line-numbers"><code class="language-bash">$ npm run lint</code></pre><h2 id="license">License</h2>
-<p>MIT © <a href="mailto:jose.fonte@pt.bosch.com">Bacanz</a></p>
+export class AppModule {
+}</code></pre><p>Configure the table and add it into the template by registering <i>settings</i> property.</p>
+<pre class="line-numbers"><code class="language-typescript">settings: NgXLightTableSettings = { // exported type
+    headers: 
+    [
+        {
+            title: &#39;#&#39;,
+            field: &#39;tag&#39;,
+            sortable: {
+                enabled: false,
+                direction: NgXLightTableSortableDirectionEnum.neutral
+            }
+        },
+        {
+            title: &#39;Name&#39;,
+            field: &#39;name&#39;,
+            sortable: {
+                enabled: true,
+                direction: NgXLightTableSortableDirectionEnum.asc
+            }
+        },
+        {
+            title: &#39;Position&#39;,
+            field: &#39;position&#39;,
+            sortable: {
+                enabled: true,
+                direction: NgXLightTableSortableDirectionEnum.neutral
+            }
+        },
+        {
+            title: &#39;Since&#39;,
+            field: &#39;since&#39;,
+            sortable: {
+                enabled: false,
+                direction: NgXLightTableSortableDirectionEnum.neutral
+            }
+        },
+        {
+            title: &#39;Salary&#39;,
+            field: &#39;salary&#39;,
+            sortable: {
+                enabled: false,
+                direction: NgXLightTableSortableDirectionEnum.neutral
+            }
+        },
+        {
+            title: &#39;Actions&#39;,
+            field: &#39;actions&#39;,
+            sortable: {
+                enabled: true,
+                direction: NgXLightTableSortableDirectionEnum.neutral
+            }
+        }
+    ],
+    messages: {
+      empty: &#39;No records found&#39;, // Optional
+      loading: &#39;Loading records...&#39; // Optional
+    },
+    allowMultipleSort: false, // Optional
+    allowNeutralSort: true // Optional
+};</code></pre><p>Add ngx-lighttable component inside to the template:</p>
+<pre class="line-numbers"><code class="language-typescript">// ...
+
+&#40;Component({
+    template: `&lt;ngx-lighttable [settings]=&quot;settings&quot;&gt;&lt;/ngx-lighttable&gt;`
+})
+// ...</code></pre><p>Now you need records in your table. Create an array property with a list of objects in the component.</p>
+<pre class="line-numbers"><code class="language-typescript">records: any[] = [
+    {
+      tag: 1,
+      name: &#39;Paul&#39;,
+      position: &#39;iOS Developer&#39;,
+      since: 2011,
+      salary: &#39;405k&#39;,
+      actions: &#39;Delete&#39;
+    },
+    {
+      tag: 2,
+      name: &#39;John&#39;,
+      position: &#39;DevOps&#39;,
+      since: 2006,
+      salary: &#39;205k&#39;,
+      actions: &#39;Delete&#39;
+    },
+    {
+      tag: 3,
+      name: &#39;Mike&#39;,
+      position: &#39;Android Developer&#39;,
+      since: 2014,
+      salary: &#39;305k&#39;,
+      actions: &#39;Delete&#39;
+    },
+    {
+      tag: 4,
+      name: &#39;Andrew&#39;,
+      position: &#39;Android Developer&#39;,
+      since: 2011,
+      salary: &#39;105k&#39;,
+      actions: &#39;Delete&#39;
+    },
+    {
+      tag: 5,
+      name: &#39;Doe&#39;,
+      position: &#39;Backend Developer&#39;,
+      since: 2009,
+      salary: &#39;505k&#39;,
+      actions: &#39;Delete&#39;
+    },
+    {
+      tag: 6,
+      name: &#39;Alice&#39;,
+      position: &#39;UX/UI Designer&#39;,
+      since: 2012,
+      salary: &#39;370k&#39;,
+      actions: &#39;Delete&#39;
+    },
+    {
+      tag: 7,
+      name: &#39;Dickens&#39;,
+      position: &#39;Communication&#39;,
+      since: 2008,
+      salary: &#39;205k&#39;,
+      actions: &#39;Delete&#39;
+    },
+    {
+      tag: 8,
+      name: &#39;Dani&#39;,
+      position: &#39;Full-stack Developer&#39;,
+      since: 2013,
+      salary: &#39;605k&#39;,
+      actions: &#39;Delete&#39;
+    },
+  ];</code></pre><p>Add it to your table component as <i>records</i> and configure every cell.
+Note that some of them are <b>templates</b>. You can have have how many templates as you wish.</p>
+<pre class="line-numbers"><code class="language-typescript">...
+&#40;Component({
+    template: `
+    &lt;ngx-lighttable [settings]=&quot;settings&quot; [records]=&quot;records&quot;&gt;
+        &lt;ngx-lighttable-cell [field]=&quot;&#39;tag&#39;&quot;&gt;&lt;/ngx-lighttable-cell&gt;
+        &lt;ngx-lighttable-cell [field]=&quot;&#39;name&#39;&quot;&gt;&lt;/ngx-lighttable-cell&gt;  
+        &lt;ngx-lighttable-cell [field]=&quot;&#39;position&#39;&quot;&gt;&lt;/ngx-lighttable-cell&gt;        
+        &lt;ngx-lighttable-cell [field]=&quot;&#39;since&#39;&quot;&gt;&lt;/ngx-lighttable-cell&gt;       
+        &lt;ngx-lighttable-cell [field]=&quot;&#39;salary&#39;&quot;&gt;
+            &lt;ng-template let-salary&gt;
+                &lt;strong&gt;{{salary}}&lt;/strong&gt;
+            &lt;/ng-template&gt;
+        &lt;/ngx-lighttable-cell&gt;
+        &lt;ngx-lighttable-cell [field]=&quot;&#39;actions&#39;&quot;&gt;
+            &lt;ng-template let-actions&gt;
+                &lt;button&gt;{{actions}}&lt;/button&gt;
+            &lt;/ng-template&gt;
+        &lt;/ngx-lighttable-cell&gt;
+    &lt;/ngx-lighttable&gt; 
+  `
+})
+...</code></pre><p>Now you have some data in the table.</p>
+<p>The events available with this component are:</p>
+<ul>
+<li>onSort</li>
+<li>onClickRow</li>
+<li>onClickCell</li>
+</ul>
+<p>Add them as outputs to listen the events.</p>
+<pre class="line-numbers"><code class="language-typescript">&#40;Component({
+    template: `
+    &lt;ngx-lighttable 
+        [settings]=&quot;settings&quot; 
+        [records]=&quot;records&quot;
+        (onSort)=&quot;onSortTable($event)&quot;
+        (onClickRow)=&quot;...($event)&quot;
+        (onClickCell)=&quot;...($event)&quot;&gt;
+            ...
+    &lt;/ngx-lighttable&gt;
+    `
+})</code></pre><h2 id="license">License</h2>
+<p>MIT © <a href="mailto:jose.fonte@pt.bosch.com">jcunhafonte</a></p>
 
 
 
