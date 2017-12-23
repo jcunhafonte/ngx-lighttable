@@ -35,7 +35,7 @@ import {NgModule} from '@angular/core';
 
 ...
 
-import {NgXLightTable} from 'ngx-lighttable';
+import {NgXLightTableModule} from 'ngx-lighttable';
 ```
 
 Register it by adding to the list of directives of your module:
@@ -44,7 +44,7 @@ Register it by adding to the list of directives of your module:
 @NgModule({
   imports: [
     ...
-    NgXLightTable
+    NgXLightTableModule
   ],
   ...
 })
@@ -252,4 +252,6 @@ Add them as outputs to listen the events.
 
 ## License
 
-MIT © [jcunhafonte](mailto:jose.fonte@pt.bosch.com)
+MIT © [jcunhafonte](mailto:jcunhafonte@gmail.com)
+
+Built with :heart: by [jcunhafonte](https://jcunhafonte.com)

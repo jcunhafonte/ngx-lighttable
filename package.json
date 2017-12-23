@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/jcunhafonte/ngx-lighttable.git"
   },
-  "author": "José Cunha Fonte <jose.fonte@pt.bosch.com>",
+  "author": {
+    "name": "José Cunha Fonte",
+    "email": "jcunhafonte@gmail.com"
+  },
   "keywords": [
     "angular"
   ],
