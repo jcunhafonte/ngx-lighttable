@@ -1,5 +1,11 @@
 import {
-    AfterContentInit, Component, ContentChildren, EventEmitter, Input, Output, QueryList,
+    AfterContentInit,
+    Component,
+    ContentChildren,
+    EventEmitter,
+    Input,
+    Output,
+    QueryList,
     TemplateRef
 } from '@angular/core';
 import {NgXLightTableSettings} from '../types/ngx-lighttable-settings.type';
@@ -30,8 +36,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Sets table settings
-     * @param settings
-     * @type {NgXLightTableSettings}
      */
     @Input()
     public set settings(settings: NgXLightTableSettings) {
@@ -45,19 +49,16 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Triggered when a single header is sorted
-     * @type {EventEmitter<NgXLightTableSortEvent>}
      */
     @Output() public onSort: EventEmitter<NgXLightTableSortEvent> = new EventEmitter<NgXLightTableSortEvent>();
 
     /**
      * @description Triggered when a row is clicked
-     * @type {EventEmitter<Object>}
      */
     @Output() public onClickRow: EventEmitter<Object> = new EventEmitter<Object>();
 
     /**
      * @description Triggered when a single cell is clicked
-     * @type {EventEmitter<Object>}
      */
     @Output() public onClickCell: EventEmitter<Object> = new EventEmitter<Object>();
 
@@ -81,8 +82,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Check if a single header as the sortable option enabled
-     * @param header
-     * @returns {boolean}
      */
     public isSortable(header: NgXLightTableHeader): boolean {
         return header.sortable.enabled;
@@ -90,8 +89,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Check if a single header is being sorted
-     * @param header
-     * @returns {boolean}
      */
     public isSorting(header: NgXLightTableHeader): boolean {
         return header.sortable.direction !== NgXLightTableSortableDirectionEnum.neutral;
@@ -99,7 +96,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Retrieve header settings
-     * @returns {NgXLightTableHeader[]}
      */
     public getHeaders(): NgXLightTableHeader[] {
         return this._settings.headers;
@@ -107,8 +103,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Retrieve css classes for arrow directions
-     * @param header
-     * @returns {{ngx-lighttable__header-cell--sortable-arrow: boolean, ngx-lighttable__header-cell--sortable-arrow-down: boolean, ngx-lighttable__header-cell--sortable-arrow-up: boolean}}
      */
     public getArrowSortClasses(header: NgXLightTableHeader): Object {
         return {
@@ -120,8 +114,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Retrieve css classes for header
-     * @param header
-     * @returns {{ngx-lighttable__header-cell--sortable: boolean, ngx-lighttable__header-cell--sorting: boolean}}
      */
     public getHeaderSortClasses(header: NgXLightTableHeader): any {
         return {
@@ -134,8 +126,6 @@ export class NgXLightTableComponent implements AfterContentInit {
     /**
      * @description Triggered when single table header is clicked
      * @description Set all the different header to false and check the right order to table header
-     * @param event
-     * @param header
      */
     public handleSort(event: Event, header: NgXLightTableHeader): void {
         event.preventDefault();
@@ -152,8 +142,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Triggered when table row is clicked
-     * @param event
-     * @param row
      */
     public handleRow(event: Event, row: Object): void {
         event.preventDefault();
@@ -162,10 +150,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Triggered when single table cell is clicked
-     * @param event
-     * @param field
-     * @param row
-     * @param cell
      */
     public handleCell(event: Event, field: string, row: number, cell: number): void {
         event.preventDefault();
@@ -174,8 +158,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Returns the TemplateRef for the table cell or the default TemplateRef if none is passed
-     * @param cell
-     * @returns {TemplateRef<any>}
      */
     public getCellTemplate(cell: NgXLightTableCellComponent): TemplateRef<any> {
         return cell.templateRef || cell.defaultTemplateRef;
@@ -183,9 +165,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Returns data-automation attribute by params received
-     * @param area
-     * @param value
-     * @returns {string}
      */
     public getAttrDataAutomation(area: string, value: string): string {
         return `table-${area}-${value}`;
@@ -193,7 +172,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Get empty text for no records
-     * @returns {string}
      */
     public getEmptyText(): string {
         return this.isLoading ? this._settings.messages.loading : this._settings.messages.empty;
@@ -201,7 +179,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Get colspan length to style no records row
-     * @returns {number}
      */
     public getColspan(): number {
         return this._settings.headers.length;
@@ -209,7 +186,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Return if table has records
-     * @returns {boolean}
      */
     public hasRecords(): boolean {
         return this.records.length === 0;
@@ -217,7 +193,6 @@ export class NgXLightTableComponent implements AfterContentInit {
 
     /**
      * @description Check if a single header has an width option and if so get it
-     * @param header
      * @returns {string}
      */
     public getWidth(header: NgXLightTableHeader): string | null {

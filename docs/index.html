@@ -204,6 +204,7 @@
                    <div class="content-data">
 <h1 id="ngx-lighttable">ngx-lighttable</h1>
 <p><code>ngx-lighttable</code> is an Angular component built with <em>TypeScript</em>, <em>CSS3</em>, <em>HTML5</em> and <em>Angular &gt;= 4</em>. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn&#39;t make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).</p>
+<p><img src="https://github.com/jcunhafonte/ngx-lighttable/blob/master/src/preview.png" alt="Preview" class="img-responsive"></p>
 <h2 id="features">Features</h2>
 <ul>
 <li>Handle large data sets (Virtual DOM)</li>
@@ -232,17 +233,20 @@
 
 ...
 
-import {NgXLightTable} from &#39;ngx-lighttable&#39;;</code></pre><p>Register it by adding to the list of directives of your module:</p>
+import {NgXLightTableModule} from &#39;ngx-lighttable&#39;;</code></pre><p>Register it by adding to the list of directives of your module:</p>
 <pre class="line-numbers"><code class="language-typescript">&#40;NgModule({
   imports: [
     ...
-    NgXLightTable
+    NgXLightTableModule
   ],
   ...
 })
 export class AppModule {
 }</code></pre><p>Configure the table and add it into the template by registering <i>settings</i> property.</p>
-<pre class="line-numbers"><code class="language-typescript">settings: NgXLightTableSettings = { // exported type
+<pre class="line-numbers"><code class="language-typescript">import {NgXLightTableSettings} from &#39;ngx-lighttable/types/ngx-lighttable-settings.type&#39;;
+import {NgXLightTableSortableDirectionEnum} from &#39;ngx-lighttable&#39;;
+
+settings: NgXLightTableSettings = { // exported type
     headers: 
     [
         {
@@ -250,7 +254,7 @@ export class AppModule {
             field: &#39;tag&#39;,
             sortable: {
                 enabled: false,
-                direction: NgXLightTableSortableDirectionEnum.neutral
+                direction: NgXLightTableSortableDirectionEnum.neutral // exported enum
             }
         },
         {
@@ -371,7 +375,7 @@ export class AppModule {
       since: 2013,
       salary: &#39;605k&#39;,
       actions: &#39;Delete&#39;
-    },
+    }
   ];</code></pre><p>Add it to your table component as <i>records</i> and configure every cell.
 Note that some of them are <b>templates</b>. You can have have how many templates as you wish.</p>
 <pre class="line-numbers"><code class="language-typescript">...
@@ -415,7 +419,8 @@ Note that some of them are <b>templates</b>. You can have have how many template
     &lt;/ngx-lighttable&gt;
     `
 })</code></pre><h2 id="license">License</h2>
-<p>MIT © <a href="mailto:jose.fonte@pt.bosch.com">jcunhafonte</a></p>
+<p>MIT © <a href="mailto:jcunhafonte@gmail.com">jcunhafonte</a></p>
+<p>Built with :heart: by <a href="https://jcunhafonte.com">jcunhafonte</a></p>
 
 
 

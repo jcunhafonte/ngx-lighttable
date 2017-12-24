@@ -2,6 +2,8 @@
 
 `ngx-lighttable` is an Angular component built with _TypeScript_, _CSS3_, _HTML5_ and _Angular >= 4_. It is an Angular component for presenting complex data in a light package with no external dependencies. The table just consume your data and doesn't make any assumptions about your datastructure or how you handle it (filtering, sorting or pagination).
 
+![Preview](https://github.com/jcunhafonte/ngx-lighttable/blob/master/src/preview.png)
+
 ## Features
 - Handle large data sets (Virtual DOM)
 - Expressive header with sorting
@@ -55,6 +57,9 @@ export class AppModule {
 Configure the table and add it into the template by registering <i>settings</i> property.
     
 ```typescript
+import {NgXLightTableSettings} from 'ngx-lighttable/types/ngx-lighttable-settings.type';
+import {NgXLightTableSortableDirectionEnum} from 'ngx-lighttable';
+
 settings: NgXLightTableSettings = { // exported type
     headers: 
     [
@@ -63,7 +68,7 @@ settings: NgXLightTableSettings = { // exported type
             field: 'tag',
             sortable: {
                 enabled: false,
-                direction: NgXLightTableSortableDirectionEnum.neutral
+                direction: NgXLightTableSortableDirectionEnum.neutral // exported enum
             }
         },
         {
@@ -194,7 +199,7 @@ records: any[] = [
       since: 2013,
       salary: '605k',
       actions: 'Delete'
-    },
+    }
   ];
 ```
 
